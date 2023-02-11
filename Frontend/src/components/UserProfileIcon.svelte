@@ -1,14 +1,18 @@
 <script lang='ts'>
-    let letter = 'C'
+	import type { UserProps } from "../types";
+
+    export let user: UserProps;
 </script>
 
-<div class='
-    w-8 h-8
+<div class={
+    `w-8 h-8
     flex justify-center items-center
     rounded-full
-    bg-blue-500
+    bg-${user.color}-500
     text-white 
     text-xl font-bold
-'>
-    {letter}
+    `
+}
+>
+    {user.firstname.charAt(0)}
 </div>

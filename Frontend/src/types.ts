@@ -1,4 +1,12 @@
 export interface PostProps {
-    username: string;
+    user: UserProps;
     content: string;
+}
+
+export interface UserProps {
+    userId: number;
+    username: string;
+    firstname: string;
+    lastname: string;
+    color: string;
 }

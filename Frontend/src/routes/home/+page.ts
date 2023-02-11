@@ -3,19 +3,19 @@ import type { PageLoad } from './$types'
 
 let posts: PostProps[] = [
     {
-        username: "Chris",
+        user: { userId: 1, username: "chris18", firstname: "Chris", lastname: "Chan", color: "blue"},
         content: "wordssssss this is a post yeyeyeyeyeye"
     },
     {
-        username: "Axel",
+        user: { userId: 2, username: "rithvik123", firstname: "Rithvik", lastname: "Doshi", color: "amber"},
         content: "Anotha Post"
     },
     {
-        username: "Chris",
+        user: { userId: 1, username: "chris18", firstname: "Chris", lastname: "Chan", color: "blue"},
         content: "I can't stop postingggg"
     },
     {
-        username: "Rithvik",
+        user: { userId: 3, username: "axelv19", firstname: "Axel", lastname: "Vega", color: "purple"},
         content: "Yeyeyeyeye"
     }
 ]

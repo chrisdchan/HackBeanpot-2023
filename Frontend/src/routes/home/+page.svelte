@@ -2,14 +2,14 @@
     import Post from "../../components/Post.svelte";
     import MakePost from "../../components/MakePost.svelte";
     import type {PageData} from './$types';
+    import { currentUser } from "../../stores/currentUser";
 
     export let data: PageData;
     let {posts} = data;
     
 </script>
 
-
-<MakePost></MakePost>
+<MakePost user={$currentUser}></MakePost>
 <div class='
     w-2/3
     mx-8
