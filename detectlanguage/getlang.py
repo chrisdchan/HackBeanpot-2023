@@ -3,7 +3,7 @@ import detectlanguage
 def getlang(input_string):
 	'''
 	input_string: can be either a single string or a list of strings
-	WARNING: apikey.txt
+	WARNING: detectlanguagekey needed
 	'''
 	with open('../.env/detectlanguagekey', 'r') as f:
 		detectlanguage.configuration.api_key = f.readline()
