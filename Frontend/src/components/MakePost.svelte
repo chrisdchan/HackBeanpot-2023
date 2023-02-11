@@ -1,7 +1,10 @@
 <script lang='ts'>
 	import type { UserProps } from '../types';
     import UserProfileIcon from './UserProfileIcon.svelte'
-    export let user: UserProps;
+    import { currentUser } from '../stores/currentUser';
+
+    let user = $currentUser;
+
 </script>
 
 <div>
