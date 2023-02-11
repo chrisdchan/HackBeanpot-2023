@@ -1,11 +1,13 @@
 <script lang="ts">
-    let currentPage: string = "Home"
-
-    function handleClick(page: string){
-        currentPage = page
-    }
 </script>
 
-<div class="font-mono">
-    Navbar
+<div class="font-mono text-lg">
+    <a  class="font-bold " 
+        href="/home">Home</a>
+    <a  class="font-bold " 
+        href="/players">Players</a>
+    <a  class="font-bold " 
+        href="/teams">Teams</a>
+    <a  class="font-bold " 
+        href="/me">Me</a>
 </div>
