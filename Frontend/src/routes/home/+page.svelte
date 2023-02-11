@@ -3,22 +3,36 @@
     import MakePost from "../../components/MakePost.svelte";
     import type {PageData} from './$types';
     import { currentUser } from "../../stores/currentUser";
+    import { onMount } from "svelte";
+	import { goto } from "$app/navigation";
+
+    onMount(() => {
+        if($currentUser.userId == -1){
+            goto("/");
+        }
+    })
 
     export let data: PageData;
     let {posts} = data;
+    let user = $currentUser;
     
 </script>
 
-<MakePost user={$currentUser}></MakePost>
-<div class='
-    w-2/3
-    mx-8
-    border-2 rounded-md
-    divide-y divide-slate-200
-'>
-    {#each posts as post}
-        <Post {post}/>
-    {/each}
+<div class=''>
+    <div class='
+        flex flex-col
+        items-center
+    '><MakePost {user}></MakePost></div>
+    <div class='
+        flex flex-col
+        items-center
+    '>
+        {#each posts as post}
+            <Post {post}/>
+        {/each}
+    </div>
 </div>
+
+
 
 

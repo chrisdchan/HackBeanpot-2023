@@ -7,7 +7,14 @@
 
 </script>
 
-<div>
-    <UserProfileIcon {user}/>
-    <input type='text' placeholder='Start a post'>
+<div class='flex
+    w-full max-w-2xl
+    my-6
+'>
+    <div class='m-2'><UserProfileIcon {user}/></div>
+    <input 
+        class='border-2 rounded-md 
+            ml-5 w-full px-3
+        '
+        type='text' placeholder='Start a post'>
 </div>

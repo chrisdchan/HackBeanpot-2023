@@ -8,5 +8,4 @@ export interface UserProps {
     username: string;
     firstname: string;
     lastname: string;
-    color: string;
 }

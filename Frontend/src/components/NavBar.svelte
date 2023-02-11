@@ -1,8 +1,11 @@
 <script lang="ts">
 </script>
 
-<div class="font-mono text-lg">
-    <a  class="font-bold " 
+<div class="font-mono text-lg
+    flex justify-end space-x-8
+    mx-20 my-5
+">
+    <a  class="font-bold" 
         href="/home">Home</a>
     <a  class="font-bold " 
         href="/players">Players</a>
