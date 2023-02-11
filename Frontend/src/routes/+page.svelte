@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+</script>
+
+<h1>Welcome to Our App</h1>
+
+<a href="/signup" class='rounded-md'>
+    Sign Up
+</a>
+
+<a href="/login" class='rounded-md'>
+    Log in
+</a>
+
