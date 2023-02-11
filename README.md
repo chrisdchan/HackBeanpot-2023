@@ -6,3 +6,7 @@
 SvelteKit with TypeScript FrontEnd
 
 Flask on the Backend
+
+SQLAlchemy database
+
+Detect Language API
